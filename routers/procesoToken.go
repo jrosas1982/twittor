@@ -22,7 +22,7 @@ func ProcesoToken(tk string) (*models.Claim, bool, string, error) {
 
 	claims := &models.Claim{}
 	splitToken := strings.Split(tk, "Bearer")
-	if splitToken != 2 {
+	if len(splitToken) != 2 {
 		return claims, false, "", errors.New("Error de formato de token")
 	}
 	tk = strings.TrimSpace(splitToken[1])
