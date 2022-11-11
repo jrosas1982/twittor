@@ -8,7 +8,7 @@ import (
 
 /*Modelo de usuarios*/
 type Usuario struct {
-	ID              primitive.ObjectID `bson:"_id,omintempty" json:"id"`
+	ID              primitive.ObjectID `bson:"_id,omitempty" json:"id"`
 	Nombre          string             `bson:"nombre" json:"nombre,omintempty"`
 	Apellidos       string             `bson:"apellidos" json:"apellidos,omintempty"`
 	FechaNacimiento time.Time          `bson:"fechaNacimiento" json:"fechaNacimiento,omintempty"`
