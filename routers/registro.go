@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	bd "github.com/jrosas1982/twittor/bd"
+	"github.com/jrosas1982/twittor/bd"
 	"github.com/jrosas1982/twittor/models"
 )
 
